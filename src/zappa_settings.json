@@ -1,0 +1,39 @@
+{
+    "dev": {
+        "aws_region": "us-east-1",
+        "django_settings": "ukraine101.settings",
+        "profile_name": "default",
+        "project_name": "src",
+        "runtime": "python3.9",
+        "s3_bucket": "ukraine101-zappa-bucket",
+	"timeout_seconds": 900,
+        "manage_roles": false,
+        "role_name": "ZappaDjangoRole",
+        "slim_handler": true,
+        "role_arn": "arn:aws:iam::675968518280:role/ZappaDjangoRole",
+	"vpc_config" : {
+            "SubnetIds": ["subnet-0a4a02089320a6bc3", "subnet-0c75a199333dea8fd"],
+            "SecurityGroupIds": [ "sg-0f6a2366fcf6a3b66" ]
+	}
+    }
+    
+    "production": {
+        "aws_region": "us-east-1",
+        "django_settings": "ukraine101.settings_prod",
+        "profile_name": "default",
+        "project_name": "src",
+        "runtime": "python3.9",
+        "s3_bucket": "ukraine101-zappa-bucket",
+    "timeout_seconds": 900,
+        "manage_roles": false,
+        "role_name": "ZappaDjangoRole",
+        "slim_handler": true,
+        "role_arn": "arn:aws:iam::675968518280:role/ZappaDjangoRole",
+    "vpc_config" : {
+            "SubnetIds": ["subnet-0a4a02089320a6bc3", "subnet-0c75a199333dea8fd"],
+            "SecurityGroupIds": [ "sg-0f6a2366fcf6a3b66" ]
+    },
+    "certificate_arn": "arn:aws:acm:us-east-1:675968518280:certificate/1d723df2-1d61-49d5-b2fe-158e9817d5c1",
+        "domain": "ukraine-101.com",
+    }
+}

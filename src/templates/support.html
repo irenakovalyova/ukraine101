@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Support Ukraine | Ukraine 101</title>
+{% endblock %}
+
+{% block additional-style %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/support-ukraine.css' %}" />
+    {% endblock %}
+
+{% block top %}<div class="landing-page-top-container" style="background-image: url('{% static 'media/img/support-ukraine-top-image.jpg' %}');">{% endblock %}
+
+{% block content %}
+<div class="support-ukraine-hero">
+            <h2 class="support-ukraine-heading heading">Support Ukraine</h2>
+          </div>
+        </div>
+        <div id="main-section" class="support-ukraine-main">
+          <div class="support-ukraine-banner">
+            <img
+              alt="image"
+              src="{% static 'media/img/prytula-foundation.png' %}"
+              class="support-ukraine-image1"
+            />
+            <div class="support-ukraine-container3">
+              <h1 class="support-ukraine-text09">
+                <span>Serhiy Prytula Foundation</span>
+              </h1>
+              <span class="support-ukraine-text11">
+                <span>
+                  <span>
+                    Serhiy Prytula is a ukrainian actor, comedian and television host who has been helping the Ukrainian Army as a private volunteer since Russia occupied Crimea and Donbas in 2014.
+                    In February 2022, after Russia launched a full-scale invasion,
+                    the Foundation joined the Army supply movement, covering the needs of both the Armed Forces fighters and members of Territorial Defense units.
+                    The Foundation buys protective gear, optic devices, drones, medical supplies, and transport vehicles for the military. Another direction they work on is humanitarian aid.
+                </span>
+              </span>
+              <div class="solid-button-container" style="margin-top: 2rem">
+                <a href="https://prytulafoundation.org/en">
+                <button class="solid-button-button button">
+                  <span>Donate</span>
+                </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="support-ukraine-banner1">
+            <div class="support-ukraine-container4">
+              <h1 class="support-ukraine-text16">
+                <span>Come Back Alive Foundation</span>
+              </h1>
+              <span class="support-ukraine-text18">
+                <span>
+                  <span>
+                    The foundation supports the Armed Forces of Ukraine through financing purely defence initiatives.
+                    Since 2014 we have provided around 1000 thermal imagers and over 250 UAVs. In addition to the material support,
+                    we increased technological capabilities of the Army through providing 1,500 tablets with
+                    Armor software aimed at stopping the artillery. Come Back Alive also organizes trainings
+                    to equip our military with crucial skills. In 2015 we launched trainings for medical workers,
+                    artillerists, snipers, minesweepers, and defence analysts. After coming back from the front line,
+                    our military members have access to sport rehabilitation and veteran business opportunities.
+                </span>
+              </span>
+              <div class="solid-button-container" style="margin-top: 2rem">
+                <a href="https://www.comebackalive.in.ua/donate">
+                <button class="solid-button-button button">
+                  <span>Donate</span>
+                </button>
+                </a>
+              </div>
+            </div>
+            <img
+              alt="image"
+              src="{% static 'media/img/come_back_alive_foundation.jpg' %}"
+              class="support-ukraine-image2"
+            />
+          </div>
+        </div>
+{% endblock %}
